@@ -13,13 +13,61 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  border: solid red 3px;
+  background-color: #f2f2f2;
+  display:flex;
+  align-items: center;
+  margin:0 0 0 0;
+  padding: 0;
+  position: relative;
   /* выше установили ограничения для секции */
 }
+.header__title{
+  width: 730px;
+  margin-left:64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 1;
+  border: solid red 1px;
+}
+.header__subtitle{
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30px;
+  left:64px;
+  z-index: 3;
+}
+.header__link{
+  width: 388px;
+  margin-left:64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  z-index: 3;
+}
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  background: transparent;
 
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top:64px;
+  right:0px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +76,25 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+.logo{
+background-color: #f2f2f2;
+border: solid green 1px;
+width: 183px;
+height: 32px;
+}
+
+.logo_place_header{
+  background-image: url(../images/logo_place_header.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
+  top:30px;
+  left:64px;
+  position:absolute;
+}
+
+.logo_place_footer{
+  background-image: url(../images/logo_place_footer.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
 }
